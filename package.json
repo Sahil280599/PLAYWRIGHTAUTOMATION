@@ -1,14 +1,15 @@
 {
   "name": "playwright-automation",
   "version": "1.0.0",
-  "description": "",
+  "description": "Playwright Automation Framework",
   "main": "index.js",
   "scripts": {
     "test": "playwright test",
     "test:headed": "playwright test --headed",
     "test:ui": "playwright test --ui",
     "report": "playwright show-report",
-    "test:report": "playwright test && playwright show-report"
+    "test:report": "playwright test && playwright show-report",
+    "test:ci": "playwright test --reporter=html,json --output=test-results.json"
   },
   "keywords": [],
   "author": "",
