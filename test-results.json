@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 6
     },
     "preserveOutput": "always",
     "reporter": [
@@ -41,7 +41,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 6
         },
         "id": "chromium",
         "name": "chromium",
@@ -57,7 +57,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 6
         },
         "id": "firefox",
         "name": "firefox",
@@ -73,7 +73,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 6
         },
         "id": "webkit",
         "name": "webkit",
@@ -87,15 +87,15 @@
     ],
     "shard": null,
     "updateSnapshots": "missing",
-    "updateSourceMethod": "3way",
+    "updateSourceMethod": "patch",
     "version": "1.51.1",
     "workers": 6,
     "webServer": null
   },
   "suites": [
     {
-      "title": "logintest.spec.js",
-      "file": "logintest.spec.js",
+      "title": "e2e/logintest.spec.js",
+      "file": "e2e/logintest.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
@@ -112,10 +112,10 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 7,
+                  "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 10665,
+                  "duration": 11440,
                   "errors": [],
                   "stdout": [
                     {
@@ -130,16 +130,231 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-03-23T21:24:59.319Z",
+                  "startTime": "2025-03-25T21:41:13.760Z",
                   "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "b192d5fb0e6bf490f73f-4def4ec73528d850c4fc",
-          "file": "logintest.spec.js",
+          "id": "489d5ecbb1caa1a95576-dce2cdcd1098bd010ff3",
+          "file": "e2e/logintest.spec.js",
           "line": 4,
+          "column": 5
+        },
+        {
+          "title": "dashboard test",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 11363,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "entering username Admin\n"
+                    },
+                    {
+                      "text": "entering password admin123\n"
+                    },
+                    {
+                      "text": "clicking login button\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-03-25T21:41:13.760Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "489d5ecbb1caa1a95576-a562f3388d3b7aa237c2",
+          "file": "e2e/logintest.spec.js",
+          "line": 10,
+          "column": 5
+        },
+        {
+          "title": "verify login success",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 13035,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "entering username Admin\n"
+                    },
+                    {
+                      "text": "entering password admin123\n"
+                    },
+                    {
+                      "text": "clicking login button\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-03-25T21:41:13.758Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "489d5ecbb1caa1a95576-8e1984e485fece9d4d93",
+          "file": "e2e/logintest.spec.js",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "dashboard test",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 13020,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "entering username Admin\n"
+                    },
+                    {
+                      "text": "entering password admin123\n"
+                    },
+                    {
+                      "text": "clicking login button\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-03-25T21:41:13.771Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "489d5ecbb1caa1a95576-fdda6409591ee42cd266",
+          "file": "e2e/logintest.spec.js",
+          "line": 10,
+          "column": 5
+        },
+        {
+          "title": "verify login success",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 4,
+                  "status": "passed",
+                  "duration": 13940,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "entering username Admin\n"
+                    },
+                    {
+                      "text": "entering password admin123\n"
+                    },
+                    {
+                      "text": "clicking login button\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-03-25T21:41:13.757Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "489d5ecbb1caa1a95576-7aac64d37d37227dcf4e",
+          "file": "e2e/logintest.spec.js",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "dashboard test",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 5,
+                  "status": "passed",
+                  "duration": 13132,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "entering username Admin\n"
+                    },
+                    {
+                      "text": "entering password admin123\n"
+                    },
+                    {
+                      "text": "clicking login button\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-03-25T21:41:13.746Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "489d5ecbb1caa1a95576-bd3b17b298f52d1a2525",
+          "file": "e2e/logintest.spec.js",
+          "line": 10,
           "column": 5
         }
       ]
@@ -147,9 +362,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-03-23T21:24:58.735Z",
-    "duration": 11445.785999999847,
-    "expected": 1,
+    "startTime": "2025-03-25T21:41:13.388Z",
+    "duration": 20912.319,
+    "expected": 6,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

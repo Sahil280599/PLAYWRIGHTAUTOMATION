@@ -1,7 +1,7 @@
 import { test as base } from '@playwright/test';
 import LoginPage from '../Pages/loginPage';
-import { URLs } from '../config/urls';
-import { TestData } from '../config/testData';
+import { URLs } from '../tests/data/urls';
+import { TestData } from '../tests/data/testData';
 
 // Declare the types of fixtures
 export const test = base.extend({
