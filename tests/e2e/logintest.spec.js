@@ -1,5 +1,5 @@
-import { test, expect } from '../fixtures/auth.fixture';
-import { URLs } from '../config/urls';
+import { test, expect } from '../../fixtures/auth.fixture';
+import { URLs } from '../data/urls';
 
 test("verify login success", async ({ loggedInPage }) => {
     // Now you're already logged in and can start testing
