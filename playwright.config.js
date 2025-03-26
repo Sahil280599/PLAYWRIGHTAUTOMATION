@@ -38,6 +38,17 @@ export default defineConfig({
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
+    videoSize: { width: 1280, height: 720 },
+    screenshotSize: { width: 1280, height: 720 },
+    viewport: { width: 1280, height: 720 },
+    deviceScaleFactor: 1,
+    colorScheme: 'light',
+    locale: 'en-IN',
+    timezoneId: 'Asia/Kolkata',
+    geolocation: { longitude: 78.9629, latitude: 20.5937 },
+    permissions: ['geolocation'],
+    actionTimeout: 15000,
+    navigationTimeout: 30000,
   },
 
   /* Configure projects for major browsers */
@@ -84,5 +95,7 @@ export default defineConfig({
   //   url: 'http://127.0.0.1:3000',
   //   reuseExistingServer: !process.env.CI,
   // },
+
+  outputDir: 'reports/',
 });
 

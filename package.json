@@ -15,6 +15,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.42.1"
+    "@eslint/js": "^9.23.0",
+    "@playwright/test": "^1.42.1",
+    "eslint": "^9.23.0",
+    "globals": "^16.0.0"
   }
 }
