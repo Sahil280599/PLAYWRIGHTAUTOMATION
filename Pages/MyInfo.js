@@ -30,12 +30,14 @@ export default class myInfo extends BasePage {
             this.logger.startAction('Downloading image');
             
             // Set up download listener before triggering the download
-            const downloadPromise = this.page.waitForEvent('download');
+            const downloadPromise = this.page.waitForEvent('download', { timeout: 30000 });
             
             // Click the download button
+            this.logger.info('Clicking download button');
             await this.click(this.employeeImagePNG);
             
             // Wait for the download to start
+            this.logger.info('Waiting for download to start');
             const download = await downloadPromise;
             
             // Wait for the download to complete and get the path
