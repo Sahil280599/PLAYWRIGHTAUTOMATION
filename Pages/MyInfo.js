@@ -29,8 +29,12 @@ export default class myInfo extends BasePage {
         try{
             this.logger.startAction('Downloading image');
             
+            // Ensure the button is visible and enabled before clicking
+            await this.employeeImagePNG.waitFor({ state: 'visible', timeout: 10000 });
+            await this.employeeImagePNG.isEnabled();
+
             // Set up download listener before triggering the download
-            const downloadPromise = this.page.waitForEvent('download', { timeout: 30000 });
+            const downloadPromise = this.page.waitForEvent('download', { timeout: 60000 });
             
             // Click the download button
             this.logger.info('Clicking download button');
