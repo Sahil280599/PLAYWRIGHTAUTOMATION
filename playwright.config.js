@@ -27,7 +27,8 @@ export default defineConfig({
   reporter: [
     ['html'],
     ['list'],
-    ['json', { outputFile: 'test-results.json' }]
+    ['json', { outputFile: 'test-results.json' }],
+    ['./reporters/bugReportReporter.js'],
   ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
@@ -35,7 +36,7 @@ export default defineConfig({
     baseURL: 'https://opensource-demo.orangehrmlive.com',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on-first-retry',
+    trace: 'retain-on-failure',
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
   },

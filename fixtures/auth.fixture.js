@@ -1,4 +1,4 @@
-import { test as base } from '@playwright/test';
+import { test as base } from './healing.fixture.js';
 import LoginPage from '../Pages/loginPage';
 import { URLs } from '../tests/data/urls';
 import { TestData } from '../tests/data/testData';

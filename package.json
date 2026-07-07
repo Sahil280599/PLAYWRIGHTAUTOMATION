@@ -1,6 +1,7 @@
 {
   "name": "playwright-automation",
   "version": "1.0.0",
+  "type": "module",
   "description": "Playwright Automation Framework",
   "main": "index.js",
   "scripts": {
@@ -9,12 +10,17 @@
     "test:ui": "playwright test --ui",
     "report": "playwright show-report",
     "test:report": "playwright test && playwright show-report",
-    "test:ci": "playwright test --reporter=html,json --output=test-results.json"
+    "test:ci": "playwright test --reporter=html,json --output=test-results.json",
+    "mcp:install": "npm install --prefix mcp-playwright-server",
+    "mcp:start": "node mcp-playwright-server/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.42.1"
+    "@playwright/test": "^1.59.1",
+    "pdf-lib": "^1.17.1",
+    "pdf-parse": "^2.4.5",
+    "xlsx": "^0.18.5"
   }
 }

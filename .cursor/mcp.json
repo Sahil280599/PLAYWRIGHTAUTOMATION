@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "node",
+      "args": ["/Users/sahiltripathi/Desktop/PLAYWRIGHTAUTOMATION/mcp-playwright-server/index.js"]
+    }
+  }
+}

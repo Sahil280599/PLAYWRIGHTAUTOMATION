@@ -1,0 +1,34 @@
+{
+  "title": "[AUTO] dashboard test",
+  "suite": "e2e/logintest.spec.js",
+  "file": "/Users/sahiltripathi/Desktop/PLAYWRIGHTAUTOMATION/tests/e2e/logintest.spec.js",
+  "line": 10,
+  "environment": {
+    "project": "chromium",
+    "baseURL": "https://opensource-demo.orangehrmlive.com",
+    "ci": false
+  },
+  "stepsToReproduce": [
+    "Before Hooks",
+    "After Hooks",
+    "Worker Cleanup"
+  ],
+  "expected": "All assertions pass",
+  "actual": "Error: browserType.launch: Executable doesn't exist at /var/folders/tr/7_tvg41x4nb386hqyh143h500000gn/T/cursor-sandbox-cache/bd3ff4029c3d84b51f0c678086cfe026/playwright/chromium_headless_shell-1217/chrome-headless-shell-mac-x64/chrome-headless-shell\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝",
+  "attachments": [
+    {
+      "name": "error-context",
+      "path": "/Users/sahiltripathi/Desktop/PLAYWRIGHTAUTOMATION/test-results/e2e-logintest-dashboard-test-chromium/error-context.md",
+      "contentType": "text/markdown"
+    },
+    {
+      "name": "trace",
+      "path": "/Users/sahiltripathi/Desktop/PLAYWRIGHTAUTOMATION/test-results/e2e-logintest-dashboard-test-chromium/trace.zip",
+      "contentType": "application/zip"
+    }
+  ],
+  "failureContextDir": null,
+  "duration": 0,
+  "retry": 0,
+  "timestamp": "2026-07-07T22:13:27.521Z"
+}

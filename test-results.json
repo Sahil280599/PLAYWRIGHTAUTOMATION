@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "/Users/sahiltripathi/Desktop/Automation/PlayWrightAutomation/playwright.config.js",
-    "rootDir": "/Users/sahiltripathi/Desktop/Automation/PlayWrightAutomation/tests",
+    "configFile": "/Users/sahiltripathi/Desktop/PLAYWRIGHTAUTOMATION/playwright.config.js",
+    "rootDir": "/Users/sahiltripathi/Desktop/PLAYWRIGHTAUTOMATION/tests",
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": null,
@@ -10,10 +10,53 @@
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
-    "metadata": {
-      "actualWorkers": 6
-    },
+    "metadata": {},
     "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/sahiltripathi/Desktop/PLAYWRIGHTAUTOMATION/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/sahiltripathi/Desktop/PLAYWRIGHTAUTOMATION/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/sahiltripathi/Desktop/PLAYWRIGHTAUTOMATION/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/sahiltripathi/Desktop/PLAYWRIGHTAUTOMATION/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/sahiltripathi/Desktop/PLAYWRIGHTAUTOMATION/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/Users/sahiltripathi/Desktop/PLAYWRIGHTAUTOMATION/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
     "reporter": [
       [
         "html",
@@ -28,343 +71,35 @@
         {
           "outputFile": "test-results.json"
         }
+      ],
+      [
+        "/Users/sahiltripathi/Desktop/PLAYWRIGHTAUTOMATION/reporters/bugReportReporter.js",
+        null
       ]
     ],
     "reportSlowTests": {
       "max": 5,
       "threshold": 300000
     },
-    "quiet": false,
-    "projects": [
-      {
-        "outputDir": "/Users/sahiltripathi/Desktop/Automation/PlayWrightAutomation/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {
-          "actualWorkers": 6
-        },
-        "id": "chromium",
-        "name": "chromium",
-        "testDir": "/Users/sahiltripathi/Desktop/Automation/PlayWrightAutomation/tests",
-        "testIgnore": [],
-        "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
-        ],
-        "timeout": 30000
-      },
-      {
-        "outputDir": "/Users/sahiltripathi/Desktop/Automation/PlayWrightAutomation/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {
-          "actualWorkers": 6
-        },
-        "id": "firefox",
-        "name": "firefox",
-        "testDir": "/Users/sahiltripathi/Desktop/Automation/PlayWrightAutomation/tests",
-        "testIgnore": [],
-        "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
-        ],
-        "timeout": 30000
-      },
-      {
-        "outputDir": "/Users/sahiltripathi/Desktop/Automation/PlayWrightAutomation/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {
-          "actualWorkers": 6
-        },
-        "id": "webkit",
-        "name": "webkit",
-        "testDir": "/Users/sahiltripathi/Desktop/Automation/PlayWrightAutomation/tests",
-        "testIgnore": [],
-        "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
-        ],
-        "timeout": 30000
-      }
-    ],
     "shard": null,
+    "tags": [],
     "updateSnapshots": "missing",
     "updateSourceMethod": "patch",
-    "version": "1.51.1",
-    "workers": 6,
+    "version": "1.59.1",
+    "workers": 1,
     "webServer": null
   },
-  "suites": [
+  "suites": [],
+  "errors": [
     {
-      "title": "e2e/logintest.spec.js",
-      "file": "e2e/logintest.spec.js",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "verify login success",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 11440,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "entering username Admin\n"
-                    },
-                    {
-                      "text": "entering password admin123\n"
-                    },
-                    {
-                      "text": "clicking login button\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-03-25T21:41:13.760Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "489d5ecbb1caa1a95576-dce2cdcd1098bd010ff3",
-          "file": "e2e/logintest.spec.js",
-          "line": 4,
-          "column": 5
-        },
-        {
-          "title": "dashboard test",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "parallelIndex": 1,
-                  "status": "passed",
-                  "duration": 11363,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "entering username Admin\n"
-                    },
-                    {
-                      "text": "entering password admin123\n"
-                    },
-                    {
-                      "text": "clicking login button\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-03-25T21:41:13.760Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "489d5ecbb1caa1a95576-a562f3388d3b7aa237c2",
-          "file": "e2e/logintest.spec.js",
-          "line": 10,
-          "column": 5
-        },
-        {
-          "title": "verify login success",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [
-                {
-                  "workerIndex": 2,
-                  "parallelIndex": 2,
-                  "status": "passed",
-                  "duration": 13035,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "entering username Admin\n"
-                    },
-                    {
-                      "text": "entering password admin123\n"
-                    },
-                    {
-                      "text": "clicking login button\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-03-25T21:41:13.758Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "489d5ecbb1caa1a95576-8e1984e485fece9d4d93",
-          "file": "e2e/logintest.spec.js",
-          "line": 4,
-          "column": 5
-        },
-        {
-          "title": "dashboard test",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [
-                {
-                  "workerIndex": 3,
-                  "parallelIndex": 3,
-                  "status": "passed",
-                  "duration": 13020,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "entering username Admin\n"
-                    },
-                    {
-                      "text": "entering password admin123\n"
-                    },
-                    {
-                      "text": "clicking login button\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-03-25T21:41:13.771Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "489d5ecbb1caa1a95576-fdda6409591ee42cd266",
-          "file": "e2e/logintest.spec.js",
-          "line": 10,
-          "column": 5
-        },
-        {
-          "title": "verify login success",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "webkit",
-              "projectName": "webkit",
-              "results": [
-                {
-                  "workerIndex": 4,
-                  "parallelIndex": 4,
-                  "status": "passed",
-                  "duration": 13940,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "entering username Admin\n"
-                    },
-                    {
-                      "text": "entering password admin123\n"
-                    },
-                    {
-                      "text": "clicking login button\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-03-25T21:41:13.757Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "489d5ecbb1caa1a95576-7aac64d37d37227dcf4e",
-          "file": "e2e/logintest.spec.js",
-          "line": 4,
-          "column": 5
-        },
-        {
-          "title": "dashboard test",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "webkit",
-              "projectName": "webkit",
-              "results": [
-                {
-                  "workerIndex": 5,
-                  "parallelIndex": 5,
-                  "status": "passed",
-                  "duration": 13132,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "entering username Admin\n"
-                    },
-                    {
-                      "text": "entering password admin123\n"
-                    },
-                    {
-                      "text": "clicking login button\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-03-25T21:41:13.746Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "489d5ecbb1caa1a95576-bd3b17b298f52d1a2525",
-          "file": "e2e/logintest.spec.js",
-          "line": 10,
-          "column": 5
-        }
-      ]
+      "message": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments.",
+      "stack": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments."
     }
   ],
-  "errors": [],
   "stats": {
-    "startTime": "2025-03-25T21:41:13.388Z",
-    "duration": 20912.319,
-    "expected": 6,
+    "startTime": "2026-07-07T22:23:25.710Z",
+    "duration": 6.9950000000000045,
+    "expected": 0,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
